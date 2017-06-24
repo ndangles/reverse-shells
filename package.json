@@ -1,0 +1,12 @@
+{
+  "name": "reverse-shells",
+  "version": "1.0.0",
+  "description": "reverse shells in nodejs using different methods",
+  "author": "nicholas dangles",
+  "dependencies": {
+    "express": "^4.15.3",
+    "ngrok": "^2.2.11",
+    "node-cmd": "^3.0.0",
+    "twilio": "^3.4.0"
+  }
+}
