@@ -1,11 +1,11 @@
-const express 			 = require('express');
-const app 				 = express();
-const cmd 				 = require('node-cmd');
-const ngrok 			 = require('ngrok');
-const accountSid 	     = 'YOUR ACCOUNTSID HERE';
-const authToken 		 = 'YOUR AUTHTOKEN HERE';
-const twilio			 = require('twilio')(accountSid, authToken);
-const MessagingResponse  = require('twilio').twiml.MessagingResponse;
+const express			= require('express');
+const app 			= express();
+const cmd 			= require('node-cmd');
+const ngrok 			= require('ngrok');
+const accountSid 		= 'YOUR ACCOUNTSID HERE';
+const authToken 		= 'YOUR AUTHTOKEN HERE';
+const twilio 			= require('twilio')(accountSid, authToken);
+const MessagingResponse 	= require('twilio').twiml.MessagingResponse;
 
 app.get('/api/sms', function(req, res){
 	
