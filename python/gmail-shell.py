@@ -1,3 +1,6 @@
+#Make sure to change the appropriate 'to' and 'from' emails in CreateMessage()
+
+
 from __future__ import print_function
 import httplib2
 import os
@@ -103,8 +106,8 @@ def SendMessage(service, user_id, message):
 def CreateMessage(subject, message_text):
 
   message = MIMEText(message_text)
-  message['to'] = 'rsytdemo@gmail.com'
-  message['from'] = 'lesterbamama@gmail.com'
+  message['to'] = 'EMAIL ADDRESS THE OUTPUT GETS SENT BACK TO'
+  message['from'] = 'EMAIL ADDRESS YOU SETUP GMAIL API UNDER'
   message['subject'] = subject
   return {'raw': base64.urlsafe_b64encode(message.as_string())}
 
